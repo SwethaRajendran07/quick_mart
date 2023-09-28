@@ -11,8 +11,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Delay for 2 seconds and then navigate to the login page
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 2), () {
       Navigator.pushReplacementNamed(context, '/login');
     });
   }
@@ -36,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     width: 50,
                     height: 62,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 2,
                   ),
                   Column(
@@ -53,14 +52,6 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ],
               ),
-              // ElevatedButton(
-              //     onPressed: () {
-              //       Navigator.push(
-              //         context,
-              //         MaterialPageRoute(builder: (context) => LoginPage()),
-              //       );
-              //     },
-              //     child: Text("Next"))
             ],
           ),
         ),
